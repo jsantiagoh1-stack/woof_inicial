@@ -60,13 +60,14 @@ A continuación se presentan las capturas de pantalla de la aplicación Woof, ej
 
 En el tema claro se observa una interfaz con colores suaves, tarjetas separadas, fotografías circulares y una barra superior con el logotipo de Woof.
 
-![Aplicación Woof - Tema claro](capturas/Screenshot_20261025_234413_Woof.jpg)
+![Aplicación Woof - Tema claro](capturas/Screenshot_20261025_234438_Woof.jpg)
 
 ### 2. Tema oscuro
 
 En el tema oscuro se observa la adaptación de los colores del fondo, las tarjetas y los textos, manteniendo una buena legibilidad.
 
-![Aplicación Woof - Tema oscuro](capturas/Screenshot_20261025_234438_Woof.jpg)
+![Aplicación Woof - Tema oscuro](capturas/Screenshot_20261025_234413_Woof.jpg)
+
 
 ## Aplicación de lo aprendido a Control de Gastos
 
