@@ -41,6 +41,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.woof.data.Dog
 import com.example.woof.data.dogs
 import com.example.woof.ui.theme.WoofTheme
+import androidx.compose.material3.Card
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,11 +62,17 @@ class MainActivity : ComponentActivity() {
 /**
  * Composable that displays an app bar and a list of dogs.
  */
+
 @Composable
 fun WoofApp() {
     LazyColumn {
-        items(dogs) {
-            DogItem(dog = it)
+        items(dogs) { dog ->
+            DogItem(
+                dog = dog,
+                modifier = Modifier.padding(
+                    dimensionResource(R.dimen.padding_small)
+                )
+            )
         }
     }
 }
@@ -76,18 +83,21 @@ fun WoofApp() {
  * @param dog contains the data that populates the list item
  * @param modifier modifiers to set to this composable
  */
+
 @Composable
 fun DogItem(
     dog: Dog,
     modifier: Modifier = Modifier
 ) {
-    Row(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(dimensionResource(R.dimen.padding_small))
-    ) {
-        DogIcon(dog.imageResourceId)
-        DogInformation(dog.name, dog.age)
+    Card(modifier = modifier) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(R.dimen.padding_small))
+        ) {
+            DogIcon(dog.imageResourceId)
+            DogInformation(dog.name, dog.age)
+        }
     }
 }
 
